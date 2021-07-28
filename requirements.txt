@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+python-multipart
+PyPDF2==1.26.0
