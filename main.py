@@ -32,7 +32,8 @@ async def create_file(doc_file: UploadFile = File(...)):
     with open(doc_file.filename, "rb") as pdf_file:
         pdf_reader = PdfFileReader(doc_file.filename)
     #print("The total number of pages in the pdf document is:", pdf_reader.numPages)
-    #a = await doc_file.read()
+#comment extra    
+#a = await doc_file.read()
     #print(doc_file.file)
     return {
         "print": doc_file.filename,
